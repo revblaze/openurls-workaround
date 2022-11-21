@@ -25,6 +25,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     if mainViewHasAppeared {
       callQueueInputFiles()
     }
+    
+    addToLog(urls)  // Optional debug log for demo
   }
   /// Array of input file paths, requested to be open with mainWindow ViewController if applicable
   var inputFileQueue: [String] = []
@@ -39,6 +41,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     viewController?.queueInputFiles()
     mainWindow.makeKeyAndOrderFront(self)
   }
+  
+  var logInputFileQueue: [String] = []
+  
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     // Insert code here to initialize your application

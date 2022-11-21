@@ -697,12 +697,18 @@
                                 <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="Jya-JP-8h4"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="k0H-XK-N6v"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="lrZ-UW-omA"/>
-                                <toolbarItem implicitItemIdentifier="44BF23E4-86C0-4D80-8013-8125D45C1216" label="Clear" paletteLabel="Clear Items" tag="-1" bordered="YES" id="Vr2-SP-6LZ">
-                                    <size key="minSize" width="24" height="25"/>
-                                    <size key="maxSize" width="24" height="25"/>
+                                <toolbarItem implicitItemIdentifier="44BF23E4-86C0-4D80-8013-8125D45C1216" label="Log" paletteLabel="Debug Log" tag="-1" image="terminal" catalog="system" bordered="YES" id="Vr2-SP-6LZ">
+                                    <size key="minSize" width="30" height="25"/>
+                                    <size key="maxSize" width="30" height="25"/>
+                                    <connections>
+                                        <action selector="toggleLog:" target="Oky-zY-oP4" id="bRb-YS-zkF"/>
+                                    </connections>
                                 </toolbarItem>
                             </allowedToolbarItems>
-                            <defaultToolbarItems/>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="lrZ-UW-omA"/>
+                                <toolbarItem reference="Vr2-SP-6LZ"/>
+                            </defaultToolbarItems>
                         </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
@@ -768,4 +774,7 @@
             <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="terminal" catalog="system" width="18" height="14"/>
+    </resources>
 </document>

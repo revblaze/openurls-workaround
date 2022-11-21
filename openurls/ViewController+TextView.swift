@@ -25,6 +25,8 @@ extension ViewController: NSTextViewDelegate {
     let text = NSAttributedString(string: formatString)
     textView.textStorage?.setAttributedString(text)
     renderTextView()
+    // Debug log
+    lastInputFileQueue = text; isLog = true
   }
   
 }

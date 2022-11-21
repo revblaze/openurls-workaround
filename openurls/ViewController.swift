@@ -45,8 +45,10 @@ class ViewController: NSViewController {
   }
   
   
-  // MARK: - UI Elements
+  // MARK: UI Elements
   @IBOutlet weak var textView: NSTextView!
+  var lastInputFileQueue: NSAttributedString?
+  var isLog = true
 
 
 }
