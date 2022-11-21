@@ -39,7 +39,7 @@ class ViewController: NSViewController {
       DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
         self.updateTextView()
         self.appDelegate.inputFileQueue = []    // Empty openAppWithFilePaths
-        self.appDelegate.didDispatchFileQueue = false // Enable UI
+        self.appDelegate.didDispatchFileQueue = false
       }
     }
   }
