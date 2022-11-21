@@ -10,6 +10,10 @@ import Cocoa
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+  func application(_ application: NSApplication, open urls: [URL]) {
+    // Handle
+  }
+
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     // Insert code here to initialize your application
   }
