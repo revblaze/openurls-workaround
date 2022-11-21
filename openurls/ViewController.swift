@@ -36,7 +36,7 @@ class ViewController: NSViewController {
     if appDelegate.didDispatchFileQueue == false {
       appDelegate.didDispatchFileQueue = true   // Is first session call, switch flag
       // After 0.3s has elapsed, initate import of file queue
-      DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+      DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
         self.updateTextView()
         self.appDelegate.inputFileQueue = []    // Empty openAppWithFilePaths
         self.appDelegate.didDispatchFileQueue = false // Enable UI
